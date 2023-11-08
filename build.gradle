@@ -42,7 +42,7 @@ jacocoTestReport {
 sonar {
     properties {
         property 'sonar.host.url', 'https://sonarcloud.io'
-        property 'sonar.projectKey', 'ChrisGalHur_Desing_patterns'
+        property 'sonar.projectKey', 'ChrisGalHur_Design_patterns'
         property 'sonar.organization', 'chrisgalhur'
         property 'sonar.jacoco.reportPaths', jacoco.reportsDirectory
         property 'sonar.gradle.skipCompile', 'true'
