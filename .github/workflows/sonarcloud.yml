@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - ismaMain
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
