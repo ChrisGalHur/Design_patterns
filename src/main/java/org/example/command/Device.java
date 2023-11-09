@@ -1,12 +1,16 @@
 package org.example.command;
 
+import java.util.logging.Logger;
+
 public class Device {
 
-        public void turnOn() {
-            System.out.println("Device turning on");
-        }
+    private static final Logger LOGGER = Logger.getLogger(Device.class.getName());
 
-        public void turnOff() {
-            System.out.println("Device turning off");
-        }
+    public void turnOn() {
+        LOGGER.info("Device turning on");
+    }
+
+    public void turnOff() {
+        LOGGER.info("Device turning off");
+    }
 }
