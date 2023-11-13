@@ -7,22 +7,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ObjectDecorationTest {
-
+    //VARIABLES
     private IObject baseObject;
     private IObject decoratedObject;
-    private AutoCloseable autoCloseable;
+    private AutoCloseable closeable;
 
     @BeforeEach
     public void setUp() {
         baseObject = new ObjectImp();
         decoratedObject = new ObjectDecoration(baseObject);
-        autoCloseable = () -> { //implenta la interfaz AutoCloseable
+        closeable = () -> { //implenta la interfaz AutoCloseable
         };
     }
 
     @AfterEach
     public void setClose() throws Exception {
-        autoCloseable.close(); //cierra el recurso después de las pruebas.
+        closeable.close(); //cierra el recurso después de las pruebas.
     }
 
     @Test
